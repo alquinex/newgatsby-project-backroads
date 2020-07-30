@@ -1,0 +1,10 @@
+{
+  "cSpell.customFolderDictionaries": [
+
+  ],
+
+  "jshint.options": {
+    "esversion": 6
+  },
+  "editor.formatOnType": true
+}
