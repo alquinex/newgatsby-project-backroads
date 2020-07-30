@@ -23,6 +23,9 @@ function About() {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt
             quisquam earum.
           </p>
+          <button type="button" className="btn-primary">
+            read more
+          </button>
         </article>
       </div>
     </section>
