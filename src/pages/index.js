@@ -1,26 +1,28 @@
-import React from "react"
-import Layout from "../components/Layout"
-import { Link } from "gatsby"
-import Banner from "../components/Banner"
-import About from "../components/Home/About"
-import Services from "../components/Home/Services"
-import StyledHero from "../components/StyledHero"
-import { graphql } from "gatsby"
+import React from 'react'
+import Layout from '../components/Layout'
+import { Link } from 'gatsby'
+import Banner from '../components/Banner'
+import About from '../components/Home/About'
+import Services from '../components/Home/Services'
+import StyledHero from '../components/StyledHero'
+import { graphql } from 'gatsby'
+import FeaturedTours from '../components/Home/FeaturedTours'
 
 export default ({ data }) => (
   <Layout>
-    <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
+    <StyledHero home='true' img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
-        title="continue exploring"
-        info="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, odit?"
+        title='continue exploring'
+        info='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, odit?'
       >
-        <Link to="/tours" className="btn-white">
+        <Link to='/tours' className='btn-white'>
           explore tours
         </Link>
       </Banner>
     </StyledHero>
     <About />
     <Services />
+    <FeaturedTours />
   </Layout>
 )
 

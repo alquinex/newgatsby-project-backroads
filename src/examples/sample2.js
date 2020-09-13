@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 const sample2 = () => {
   return (
@@ -6,6 +6,7 @@ const sample2 = () => {
       <div>
         <h1>Hello World</h1>
         <p>This is my first paragraph</p>
+        <div></div>
       </div>
     </div>
   )
