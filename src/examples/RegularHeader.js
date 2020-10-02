@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import { siteMetadata } from "../../gatsby-config"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import { siteMetadata } from '../../gatsby-config'
 
 const getSiteData = graphql`
   query {
@@ -9,10 +9,6 @@ const getSiteData = graphql`
         title
         description
         author
-        data {
-          name
-          age
-        }
       }
     }
   }
@@ -22,7 +18,7 @@ const RegularHeader = () => {
   return (
     <StaticQuery
       query={getSiteData}
-      render={data => {
+      render={(data) => {
         console.log(data)
 
         return (

@@ -8,10 +8,6 @@ const getSiteMetadata = graphql`
         title
         description
         author
-        data {
-          name
-          age
-        }
       }
     }
   }
@@ -23,8 +19,7 @@ const Header = () => {
   } = useStaticQuery(getSiteMetadata)
   return (
     <div>
-      <h1> title: {siteMetadata.title} </h1>{' '}
-      <h1> author: {siteMetadata.author} </h1>
+      <h1> title: {siteMetadata.title} </h1> <h1> author: {siteMetadata.author} </h1>
     </div>
   )
 }

@@ -7,14 +7,14 @@ module.exports = {
     description:
       'Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure',
     author: '@alusine',
-    data: {
-      name: 'Joan',
-      age: 33,
-    },
+    twitterUsername: '@alquinex',
+    image: './defaultBcg.jpeg',
+    siteURL: 'https://newgatsby-project-backroads.netlify.app',
   },
 
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
