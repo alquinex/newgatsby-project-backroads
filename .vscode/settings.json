@@ -6,5 +6,9 @@
   "jshint.options": {
     "esversion": 6
   },
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+  "cSpell.words": [
+    "Backroads",
+    "alusine"
+  ]
 }
